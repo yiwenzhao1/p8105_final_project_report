@@ -7,7 +7,7 @@ output:
 always_allow_html: yes
 ---
 
-```{r setup and data import, include=FALSE}
+```{r setup and data import, echo = FALSE, message=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, dpi = 300, out.width = "65%")
 library(tidyverse)
 library(leaflet)
@@ -59,6 +59,19 @@ In this project, our team...
 
 This dataset reflects reported incidents of crime (with the exception of murders where data exists for each victim) that occurred in the City of Chicago from 2006 to present, minus the most recent seven days. Data is extracted from the Chicago Police Department's CLEAR (Citizen Law Enforcement Analysis and Reporting) system. In order to protect the privacy of crime victims, addresses are shown at the block level only and specific locations are not identified.  Each record represents one criminal case. This dataset contains approximately 2 million crime records and details 22 variables such as ID, number, data, neighborhood, IUCR, and primary type for each case.
 
+#### Data Description
+
+The resulting data file of `data_clean` contains 45498 criminal records and 24 variables.
+The list below is the description of our interested variables:
+ 
+ * `data`. The date of occurrence of crime.
+ * `block`. The block where the crime occurred.
+ * `primary_type`. The primary description of crime.
+ * `description`. Detail description to the crime.
+ * `location decription`. Detail description about where the crime occurred.
+ * `latitude`. The latitude of occurrence of crime.
+ * `longitude`. The longitude of occurrence of crime.
+ 
 ## Motivation: 
 
 Due to the cases that happened in Chicago recently, the crime rates in different areas of Chicago caught our attention. Violent incidents in Chicago are of increasing concern over the last few years, and we are interested in looking at what might be associated with increased violence in Chicago. We are concerned about people’s living safety in the city and motivated to find safer neighborhoods for living in Chicago.
@@ -66,24 +79,43 @@ Due to the cases that happened in Chicago recently, the crime rates in different
 
 ## Study Questions: 
 
-* q
-* q
-* q
+* Question 1: How does the crime amount change over these 6 years? Is there any significant change in the number of crimes? What are the possible reasons that cause the change?
+
+* Question 2: In what kind of location in Chicago does the most amount of crime happen? Which type of crime is most likely to occur in Chicago?
+
+* Question 3: According to the data analysis, what suggestions we can give on the security in Chicago?
 
 
-## Data Resource: 
 
-6-year Chicago Crime data records are retrieved from Chicago’s official public data [Chicago Data Portal](https://data.cityofchicago.org). 
 
 ## Exploratory Analysis: 
 
 * Figure1: 
 
+The figure shows that the number of crimes in Chicago change over the most recent six years. The range of the number of crimes per year is between 4629 and 10824 from 2016 to 2021.We could see that, the peak number of the crimes over time is 2020 with 10824 cases. Basically, the trend went smooth from 2016 to 2020 and went down after 2020.
+
 * Figure2: 
+
+This heat map clearly shows that the crime rate has a significant increase in 2020, and the significant increase of crime in Chicago is probably associated with the COVID-19 prevalence. In 2021, the total crime rates is a little bit lower than previous year. In general, there is no significant differences on crime rates with diffeernt months.
+
 
 * Figure3: 
 
+This word clouding figure shows the top number of crimes. According to this figure, Battery is the top crime which happens the most time in past 6 years. Battery means the intentional use of force or violence against another. Thus, people in Chicago need to pay more attention on others’ intentionally physical harm.
+
 * Figure4: 
+
+We sorted and ranked the data, and compiled the top 10 locations with high criminal incidence from 2016 to 2021 into a dynamic bar graph. Through this motion chart, we can visually observe the names of the crime areas, the number of crime incidents, and their changing trends.
+
+We can note that apartments, residence, streets and sidewalks are firmly in the top 4 from 2016 to 2020. They have been the locations with high crime rates during the six-year period. This result also coincides with our previous study of the types of crime that occur most frequently. The top three crime types in Chicago in our study are battery, assault, and other offenses, and these crime types are indeed more likely to occur in these locations.
+
+It is also interesting to note that the number of crimes in apartment and residence had a large increase and reached a peak in 2020 and then dropped sharply to an average level in 2021, while other locations also experiencing a small decrease in crime during 2020. We believe that this trend may be related to the home quarantine policy for the Covid-19 epidemic in 2020.
+
+* Map: 
+
+As the map shown, we found that crimes is concentrated in the central and south side of Chicago, with a gradual decrease outward. over 20,000 crimes have been accumulated over the 6 years. The amount of crimes in north district was the least but still summed up to 5,000 in the last 5 years. Thus, it is fairly enough to conclude that the middle and south districts are comparatively more dangerous while the north is safer although its number of crimes still shocked.
+
+From our perspective, Chicago’s persistently high crime rate is inextricably linked to the density of gangs. Chicago is considered to be the most gang-influenced city, with over 60 medium or large gangs, more than 700 factions or branches, and over 100,000 active gang members. Below is a detailed map of Chicago’s gang distribution which includes the name of each gang and their frequently gathering areas, we can clearly observe that gangs are concentrated in the central and southern parts of the city. This characteristic coincides with our crime rate distribution. As a result, it is reasonable for us to suspect that the concentration of gangs is one of the reasons for the high level of violence in Chicago.
 
 ## Results
 
