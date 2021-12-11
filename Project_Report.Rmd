@@ -42,9 +42,9 @@ theme_set(theme_minimal() + theme(legend.position = "bottom"))
 
 Gotham City, a city of sin that exists in comic and film works, is wildly considered to be created based on New York. This is because from a lexical history perspective, Gotham City is an alias for New York. This alias first appeared in Washington Irving's mocking periodical "Salmagundi" in 1807. Frank Miller, the author of Batman's Dark Knight Revisited, also said, "Metropolis is New York by day; Gotham City is New York by night."
   
-  However, the longtimde author of Batman series Neal Adams thought  Gotham City was more like Chicago-based in the early comics. A city that combines prosperity with high crime rates. From the towering skyscrapers to the trash-strewn back alleys. Brilliant neon lights at night  can't hide the darkness beneath the glitz. These characteristics of Chicago set the tone for Gotham City, the shadowy capital of evil.
+However, the longtimde author of Batman series Neal Adams thought  Gotham City was more like Chicago-based in the early comics. A city that combines prosperity with high crime rates. From the towering skyscrapers to the trash-strewn back alleys. Brilliant neon lights at night  can't hide the darkness beneath the glitz. These characteristics of Chicago set the tone for Gotham City, the shadowy capital of evil.
   
-  Due to a shooting case that happened in Chicago recently, the crime rates in different areas of Chicago caught our attention. Violent incidents in Chicago are of increasing concern over the last few years, and we are interested in looking at what might be associated with increased violence in Chicago. We are concerned about people’s living safety in the city and motivated to find safer neighborhoods for living in Chicago.
+Due to a shooting case that happened in Chicago recently, the crime rates in different areas of Chicago caught our attention. Violent incidents in Chicago are of increasing concern over the last few years, and we are interested in looking at what might be associated with increased violence in Chicago. We are concerned about people’s living safety in the city and motivated to find safer neighborhoods for living in Chicago.
   
   
 ## Data
@@ -60,20 +60,23 @@ Gotham City, a city of sin that exists in comic and film works, is wildly consid
   - [2020](https://data.cityofchicago.org/Public-Safety/Crimes-2020/qzdf-xmn8/data)
   - [2021](https://data.cityofchicago.org/Public-Safety/Crimes-2021/dwme-t96c/data)
 
-This dataset reflects reported incidents of crime (with the exception of murders where data exists for each victim) that occurred in the City of Chicago from 2006 to present, minus the most recent seven days. Data is extracted from the Chicago Police Department's CLEAR (Citizen Law Enforcement Analysis and Reporting) system. In order to protect the privacy of crime victims, addresses are shown at the block level only and specific locations are not identified.  Each record represents one criminal case. This dataset contains approximately 2 million crime records and details 22 variables such as ID, number, data, neighborhood, IUCR, and primary type for each case.
+This dataset reflects reported incidents of crime (with the exception of murders where data exists for each victim) that occurred in the City of Chicago from 2017 to present, minus the most recent seven days. Data is extracted from the Chicago Police Department's CLEAR (Citizen Law Enforcement Analysis and Reporting) system. In order to protect the privacy of crime victims, addresses are shown at the block level only and specific locations are not identified.  Each record represents one criminal case. This dataset contains approximately 2 million crime records and details 22 variables such as ID, number, data, neighborhood, IUCR, and primary type for each case.
 
 #### Data Description
 
-The resulting data file of `data_clean` contains 45498 criminal records and 24 variables.
-The list below is the description of our interested variables:
- 
- * `data`. The date of occurrence of crime.
- * `block`. The block where the crime occurred.
- * `primary_type`. The primary description of crime.
- * `description`. Detail description to the crime.
- * `location decription`. Detail description about where the crime occurred.
- * `latitude`. The latitude of occurrence of crime.
- * `longitude`. The longitude of occurrence of crime.
+The resulting data file of data_clean contains 184349 criminal records and 24 variables. The list below is the description of our interested variables:
+
+data. The date of occurrence of crime.
+block. The block where the crime occurred.
+primary_type. The primary description of crime.
+description. Detail description to the crime.
+location decription. Detail description about where the crime occurred.
+latitude. The latitude of occurrence of crime.
+longitude. The longitude of occurrence of crime.
+
+The data file of weather containing the detail weather conditions, such as temperature, dew, humidity etc. from July 1st to July 31th in Chicago. We will use this dataset to explore the association between weather and criminal incidence in Chicago. weather dataset was retrieved from Weather Query Builder.
+
+
  
 ## Motivation: 
 
@@ -81,12 +84,12 @@ Due to the cases that happened in Chicago recently, the crime rates in different
 
 From news, an 18-year-old man was charged with robbing and murdering Shaoxiong “Dennis” Zheng (right), 24, in the 900 block of East 54th Place (left) Tuesday afternoon
 </p>
-  Apart from that, news came that Zheng, a 24-year-old native of of China’s Sichuan province, was shot and killed on November 9th during a robbery in the 900 block of East 54th Place, which was in the vicinity of University of Chicago's campus. As his compatriots, we were all overwhelmed by unbearable sorrow and loss. And such tragedies kept occuring every now and then. Therefore, our concern towards the crimes in Chicago grew.
+Apart from that, news came that Zheng, a 24-year-old native of of China’s Sichuan province, was shot and killed on November 9th during a robbery in the 900 block of East 54th Place, which was in the vicinity of University of Chicago's campus. As his compatriots, we were all overwhelmed by unbearable sorrow and loss. And such tragedies kept occuring every now and then. Therefore, our concern towards the crimes in Chicago grew.
 
 
 ## Study Questions: 
 
-* **Question 1**: How does the crime amount change over these 6 years? Is there any significant change in the number of crimes? What are the possible reasons that cause the change?
+* **Question 1**: How does the crime amount change over these 5 years? Is there any significant change in the number of crimes? What are the possible reasons that cause the change?
 
 * **Question 2**: In what kind of location in Chicago does the most amount of crime happen? Which type of crime is most likely to occur in Chicago?
 

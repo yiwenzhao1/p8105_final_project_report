@@ -49,7 +49,7 @@ public data [Chicago Data Portal](https://data.cityofchicago.org).
 
 This dataset reflects reported incidents of crime (with the exception of
 murders where data exists for each victim) that occurred in the City of
-Chicago from 2006 to present, minus the most recent seven days. Data is
+Chicago from 2017 to present, minus the most recent seven days. Data is
 extracted from the Chicago Police Department’s CLEAR (Citizen Law
 Enforcement Analysis and Reporting) system. In order to protect the
 privacy of crime victims, addresses are shown at the block level only
@@ -60,18 +60,21 @@ IUCR, and primary type for each case.
 
 #### Data Description
 
-The resulting data file of `data_clean` contains 45498 criminal records
+The resulting data file of data_clean contains 184349 criminal records
 and 24 variables. The list below is the description of our interested
 variables:
 
--   `data`. The date of occurrence of crime.
--   `block`. The block where the crime occurred.
--   `primary_type`. The primary description of crime.
--   `description`. Detail description to the crime.
--   `location decription`. Detail description about where the crime
-    occurred.
--   `latitude`. The latitude of occurrence of crime.
--   `longitude`. The longitude of occurrence of crime.
+data. The date of occurrence of crime. block. The block where the crime
+occurred. primary_type. The primary description of crime. description.
+Detail description to the crime. location decription. Detail description
+about where the crime occurred. latitude. The latitude of occurrence of
+crime. longitude. The longitude of occurrence of crime.
+
+The data file of weather containing the detail weather conditions, such
+as temperature, dew, humidity etc. from July 1st to July 31th in
+Chicago. We will use this dataset to explore the association between
+weather and criminal incidence in Chicago. weather dataset was retrieved
+from Weather Query Builder.
 
 ## Motivation:
 
@@ -98,7 +101,7 @@ in Chicago grew.
 
 ## Study Questions:
 
--   **Question 1**: How does the crime amount change over these 6 years?
+-   **Question 1**: How does the crime amount change over these 5 years?
     Is there any significant change in the number of crimes? What are
     the possible reasons that cause the change?
 
