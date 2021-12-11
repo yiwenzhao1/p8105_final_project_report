@@ -1,4 +1,4 @@
-Analyzing trends of organ donor enrollment in New York state
+Analyzing trends of organ donor enrollment in Chicago state
 ================
 
 | Name         | Uni    |
@@ -211,9 +211,9 @@ our animated bar graph shows that streets and sidewalks are the
 locations with high crime rates during the five-year period.
 
 To further explain the high crime rates, we do a regression to see if
-there is an association with weather.Unfortunately, there is no evidence
-to show there is a direct association between weather condition and
-criminal incidence.
+there is an association with weather. Unfortunately, there is no
+evidence to show there is a direct association between weather condition
+and criminal incidence.
 
 ## Discussion:
 

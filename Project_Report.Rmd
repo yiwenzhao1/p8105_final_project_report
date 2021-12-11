@@ -1,5 +1,5 @@
 ---
-title: "Analyzing trends of organ donor enrollment in New York state"
+title: "Analyzing trends of organ donor enrollment in Chicago state"
 output: 
   github_document:
     md_extensions: +tex_math_dollars
@@ -129,7 +129,7 @@ According to our study, in 2017, 2018, 2019, and the first two months in 2020, t
 
 Meanwhile, we find the most frequently occurring type of crime in Chicago from 2017 to 2021 is narcotics, followed by weapons violation, theft, battery, assault, other offense, and criminal trespass etc. Also, our animated bar graph shows that streets and sidewalks are the locations with high crime rates during the five-year period.
 
-To further explain the high crime rates, we do a regression to see if there is an association with weather.Unfortunately, there is no evidence to show there is a direct association between weather condition and criminal incidence.
+To further explain the high crime rates, we do a regression to see if there is an association with weather. Unfortunately, there is no evidence to show there is a direct association between weather condition and criminal incidence.
 
 
 ## Discussion: 
