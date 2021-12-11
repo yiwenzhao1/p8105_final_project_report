@@ -125,6 +125,12 @@ From our perspective, Chicago’s persistently high crime rate is inextricably l
 
 ## Results
 
+According to our study, in 2017, 2018, 2019, and the first two months in 2020, there is a much higher density of crimes happened during the year. The crime case density drops rapidly in the middle of March in 2020 and reaches the lowest point in April 2020. The crime rate has a significant increase in 2020, and the significant increase of crime in Chicago is probably associated with the COVID-19 prevalence. 
+
+Meanwhile, we find the most frequently occurring type of crime in Chicago from 2017 to 2021 is narcotics, followed by weapons violation, theft, battery, assault, other offense, and criminal trespass etc. Also, our animated bar graph shows that streets and sidewalks are the locations with high crime rates during the five-year period.
+
+To further explain the high crime rates, we do a regression to see if there is an association with weather.Unfortunately, there is no evidence to show there is a direct association between weather condition and criminal incidence.
+
 
 ## Discussion: 
 
